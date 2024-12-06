@@ -1,0 +1,14 @@
+spring:
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  r2dbc:
+    url: r2dbc:h2:mem:///books?options=DB_CLOSE_DELAY=-1
+    username: ''
+    password: ''
+    pool:
+      enabled: false
+  graphql:
+    graphiql:
+      enabled: true
